@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MassTransit.Autofac" Version="7.1.4" />
+    <PackageReference Include="MassTransit.RabbitMQ" Version="7.1.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.2" />
+    <PackageReference Include="Topshelf.Autofac" Version="4.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Library.Helper\Library.Helper.csproj" />
+    <ProjectReference Include="..\Library.Model\Library.Model.csproj" />
+    <ProjectReference Include="..\Library.MsSqlRepository\Library.MsSqlRepository.csproj" />
+  </ItemGroup>
+
+</Project>

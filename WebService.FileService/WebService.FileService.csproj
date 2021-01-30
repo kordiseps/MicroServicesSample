@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="7.1.0" />
+    <PackageReference Include="MassTransit.Autofac" Version="7.1.4" />
+    <PackageReference Include="MassTransit.RabbitMQ" Version="7.1.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Library.Helper\Library.Helper.csproj" />
+    <ProjectReference Include="..\Library.Model\Library.Model.csproj" />
+    <ProjectReference Include="..\Library.MongoRepository\Library.MongoRepository.csproj" />
+    <ProjectReference Include="..\Library.MsSqlRepository\Library.MsSqlRepository.csproj" />
+  </ItemGroup>
+
+
+</Project>
